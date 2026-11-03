@@ -1,0 +1,110 @@
+
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e0f2fe, #eef2ff);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #1e293b;
+}
+
+/* Heading */
+.Heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.Heading h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #2563eb;
+    letter-spacing: 1px;
+}
+
+.Heading h3 {
+    font-size: 22px;
+    font-weight: 400;
+    color: #64748b;
+    margin-top: 8px;
+}
+
+/* Dictionary form */
+#dictionary {
+    background: #ffffff;
+    width: 100%;
+    max-width: 450px;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Word label */
+#word {
+    font-size: 16px;
+    font-weight: 600;
+    color: #334155;
+}
+
+/* Audio section */
+#audioWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#audioLabel {
+    font-size: 15px;
+    font-weight: 600;
+    color: #475569;
+}
+
+#audioPlayer {
+    width: 100%;
+}
+
+/* Submit button */
+#submit {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#submit:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.25);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+    .Heading h1 {
+        font-size: 38px;
+    }
+
+    .Heading h3 {
+        font-size: 18px;
+    }
+
+    #dictionary {
+        padding: 25px;
+    }
+}

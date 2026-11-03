@@ -3,20 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css">
     <title>Wordly Dictionary</title>
 </head>
 <body>
     <div class="Heading">
-    <h1>Type it</h1>
-    <h3> We'll find it</h3>
+    <h1>TYPE IT</h1>
+    <h3> WE'LL FIND IT</h3>
     </div>
     <form id="dictionary" method="get">
 <label id="word" for="word" aria-placeholder="Please enter your word" >Enter Word</label>
+<input 
+    type="text" 
+    id="wordInput" 
+    placeholder="Please enter your word"
+    required
+>
 <div id="audioWrapper">
     <label id="audioLabel" for="audioPlayer">Pronunciation:</label>
     <audio id="audioPlayer" controls></audio>
   </div>
 <button id="submit">Submit</button>
     </form>
+   <script src="./script.js"></script>
 </body>
 </html>
