@@ -48,6 +48,11 @@ if (audio) {
 
         })
 
+            // Find an available pronunciation audio URL
+            const audioData = data[0].phonetics.find(item =>
+                item.audio && item.audio.trim() !== ""
+            );
+
 
         .catch(error => {
             Results.innerHTML = error.message;
