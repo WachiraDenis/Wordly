@@ -35,16 +35,19 @@ dictionary.addEventListener("submit", function(event) {
             // Getting pronunciation audio
             const audio = data[0].phonetics.find(item => item.audio);
 
-            // Playing pronunciation audio
-            if (audio) {
-                audioPlayer.src = audio.audio;
-                audioPlayer.style.display = "block";
+if (audio) {
+    audioPlayer.src = audio.audio;
+    audioPlayer.style.display = "block";
+
+    audioPlayer.play();
+
             } else {
                 audioPlayer.style.display = "none";
                 Results.innerHTML += "<p>Audio pronunciation is unavailable.</p>";
             }
 
         })
+
 
         .catch(error => {
             Results.innerHTML = error.message;
