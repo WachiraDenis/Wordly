@@ -7,7 +7,7 @@
     <title>Wordly Dictionary</title>
 </head>
 <body>
-    <div class="Heading">
+    <div id="heading">
     <h1>TYPE IT</h1>
     <h3> WE'LL FIND IT</h3>
     </div>
@@ -19,8 +19,9 @@
     placeholder="Please enter your word"
     required
 >
-<label for="Results" id="Results"> <b>Results</b></label>
-<output placeholder = "the output will show here"> </output>
+<label><b>Results</b></label>
+
+<div id="dictionary-output"></div>
 <div id="audioWrapper">
     <label id="audioLabel" for="audioPlayer">Pronunciation:</label>
     <audio id="audioPlayer" controls></audio>
